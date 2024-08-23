@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.title-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; 
+}
+
+.title-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.title-slide h1 {
+    color: #fff;
+    font-size: 3rem;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.title-slide p {
+    color: #ddd;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.title-slide button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgb(65, 201, 235);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s ease;
+    border-radius: 25px; 
+}
+
+.title-slide button:hover {
+    background: #ff6347;
+}
